@@ -1,0 +1,82 @@
+/*formatações gerais*/
+*{
+  margin:0; 
+  padding:0;
+  overflow-x:hidden;
+}
+.container{
+  margin:0 auto; 
+  max-width:80%;
+}
+
+
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+}
+/*header*/
+.header{
+    display:flex; 
+    justify-content:space-between;
+}
+header{
+  padding:2rem 0 2rem 0;
+  box-shadow:0 3px 6px 0 rgb(0 0 0 / 10%), 0 4px 7px 0 rgb(0 0 0 / 6%);  
+}
+
+/*modo-dark*/
+.modo-dark{
+  cursor:pointer; 
+  background:none; 
+  border:none;
+}
+
+body.dark{
+  background:#202D36;
+  color:#fff;
+}
+
+/*area-paises*/ 
+.area-paises{
+ display:grid; 
+ grid-template-columns:repeat(4, minmax(0, 1fr));
+ margin-top:4rem;
+ grid-gap:30px;
+}
+.cards-paises{
+  display:grid;
+  box-shadow:0 4px 4px 0 rgb(0 0 0 / 10%);
+}
+.cards-paises h2,h4{
+  padding:0.5rem;
+}
+.cards-paises h4 span{
+  font-weight:normal; 
+}
+.cards-paises img{
+  max-width:100%;
+}
+/*pesquisas*/
+.pesquisas{
+  padding-top:4rem; 
+  display:flex; 
+  justify-content:space-between;
+}
+.inputPais{
+  padding:1.2rem 3rem; 
+  background:none;
+
+}
+
+.pesquisas select{
+  padding:1.2rem;
+  background:none;
+}
+
+
+
+@media(max-width:730px){
+  .area-paises{
+    grid-template-columns:1fr;
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paises</title>
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+ <header>
+   <div class="container header">
+    <h1>Onde no mundo?</h1>
+     <button class="modo-dark" onclick="alternarModo()">
+    <img width ="50px"src="imagens/lampada.svg" alt="">
+    </button> 
+   </div>
+
+
+ </header>
+  <div class="pesquisas container">
+
+  <input type="text" placeholder="Pesquise um Pais" class="inputPais">
+    
+
+    <span>
+      <select name="regiao" id="regiao">
+        <option class="option" value="">Filtre por região</option>
+         <option class="option" value="">Todos</option>
+          <option class="option" value="Africa">África</option>
+          <option class="option" value="Americas">América</option>
+          <option class="option" value="Asia">Asia</option>
+          <option class="option" value="Europe">Europa</option>
+          <option class="option" value="Oceania">Oceanía</option>
+      </select>
+    </span>
+    
+  </div>
+  <main data-paises class="area-paises container">
+ 
+  </main>
+  <script src="javaScript/script.js"></script>
+</body>
+</html>
